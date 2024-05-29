@@ -15,13 +15,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val topEdge = BottomAppBarCutCornersTopEdge(
-            bottomAppBar.fabCradleMargin,
-            bottomAppBar.fabCradleRoundedCornerRadius,
-            bottomAppBar.cradleVerticalOffset
-        )
-        val background = binding.bottomAppBar.background as MaterialShapeDrawable
-        background.shapeAppearanceModel = background.shapeAppearanceModel.toBuilder().setTopEdge(topEdge).build()
 
     }
 }
